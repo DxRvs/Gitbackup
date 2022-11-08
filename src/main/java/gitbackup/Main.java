@@ -95,7 +95,7 @@ public class Main {
 			UsernamePasswordCredentialsProvider cred = new UsernamePasswordCredentialsProvider(uname, pass);
 			for (Project p : projects) {
 				String gitUrl= p.getHttpUrlToRepo();
-				String pName = p.getName();
+				String pName = p.getNamespace().getName().strip().replace(" ", "")+File.separator +p.getName();
 				cloneRepo(gitUrl, pName, new File(backupPath), cred);
 			}
 		} catch (GitLabApiException | IOException e1) {
