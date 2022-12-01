@@ -15,7 +15,7 @@ To get started with Gitbackup you can download a release file or build an execut
  
 <pre> gradle build</pre>
 
-<em>Or either use Docker<em>
+<em>Or either use Docker</em>
 
 <pre>
 docker run --rm -u gradle -v "$PWD":/home/gradle/project -w /home/gradle/project gradle gradle build --warning-mode all
@@ -41,7 +41,7 @@ The following table includes the set of arguments required to run the util.
 
 Run:
 =============
-Open a console to run the util. Choose the folder to save to or create a new folder using the mkdir command. The arguments should be as follows:
+Open a console to run the util. Choose the folder to save to or create a new folder using the `mkdir` command. The arguments should be as follows:
 <pre>
 sudo java -jar ./gitbackup.jar -f ./folder -l user -p password -u https://gitlab.com
 </pre>
